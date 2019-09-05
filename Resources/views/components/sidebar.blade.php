@@ -1,6 +1,6 @@
 <div id="sidebar-wrapper">
     <div class="sidebar-heading">
-        <img src="http://estoque.siscompra.xyz/img/logo.png" alt=""><span>SISCOMPRAS</span> - <small>{{env('APP_VERSION')}}</small>
+        <img src="http://estoque.siscompra.xyz/img/logo.png" alt=""><span>Modulo</span> - <small>{{env('APP_VERSION')}}</small>
     </div>
     <div class="list-group list-group-flush">
         <a href="/" class="list-group-item list-group-item-action"><i class="fas fa-home"></i>Inicio</a>
