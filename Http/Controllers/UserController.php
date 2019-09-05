@@ -5,33 +5,18 @@ namespace Login\Login\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Routing\Controller;
-use Illuminate\Support\Facades\Auth;
 use Login\Login\Entities\User;
 
-
-class LoginController extends Controller
+class UserController extends Controller
 {
-
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
-
     /**
      * Display a listing of the resource.
      * @return Response
      */
     public function index()
     {
-        $usuario = Auth::user();
         $users = User::all();
-//        dd($usuario);
-        return view('login::index', compact('users','usuario'));
+        return view('login::index', compact('users'));
     }
 
     /**

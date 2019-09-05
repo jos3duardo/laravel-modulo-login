@@ -1,9 +1,31 @@
-@extends('login::layouts.master')
+@extends('login::layouts.dashboard')
 
 @section('content')
-    <h1>Hello World</h1>
+    <h1>Clientes Cadastrados</h1>
 
-    <p>
-        This view is loaded from module: {!! config('login.name') !!}
-    </p>
+
+       <table class="table table-bordered">
+           <thead>
+           <tr>
+               <th>#</th>
+               <th>Nome</th>
+               <th>Email</th>
+               <th>Ações</th>
+           </tr>
+           </thead>
+           <tbody>
+           @foreach($users as $user)
+           <tr>
+               <td>{{$user->id}}</td>
+               <td>{{$user->name}}</td>
+               <td>{{$user->email}}</td>
+               <td>
+                   <a href="#editar" class="btn btn-dark">Editar</a>
+                   <a href="#excluir" class="btn btn-danger">Excluir</a>
+               </td>
+           </tr>
+           @endforeach
+
+           </tbody>
+       </table>
 @stop
