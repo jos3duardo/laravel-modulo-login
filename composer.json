@@ -1,5 +1,5 @@
 {
-    "name": "jos3duardo/dashboard",
+    "name": "jos3duardo/login",
     "description": "Dashboard com cadastro de clientes",
     "authors": [
         {
@@ -7,16 +7,7 @@
             "email": "jos3duardolopes@gmail.com"
         }
     ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Login\\Login\\Providers\\LoginServiceProvider"
-            ],
-            "aliases": {
 
-            }
-        }
-    },
     "autoload": {
         "psr-4": {
             "Login\\Login\\": ""
