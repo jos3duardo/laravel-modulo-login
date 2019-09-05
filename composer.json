@@ -1,10 +1,10 @@
 {
-    "name": "nwidart/login",
-    "description": "",
+    "name": "jos3duardo/dashboard",
+    "description": "Dashboard com cadastro de clientes",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "José Eduardo",
+            "email": "jos3duardolopes@gmail.com"
         }
     ],
     "extra": {
@@ -13,7 +13,7 @@
                 "Login\\Login\\Providers\\LoginServiceProvider"
             ],
             "aliases": {
-                
+
             }
         }
     },
